@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>گیت مستری فارسی | یادگیری تعاملی گیت</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Vazirmatn', 'sans-serif'],
+              mono: ['Fira Code', 'monospace'],
+            },
+            colors: {
+              primary: {
+                DEFAULT: '#3462EE',
+                600: '#244BD6',
+              },
+              bg: {
+                dark: '#0F1724',
+                surface: '#0B1220',
+              },
+              text: {
+                dark: '#E6EEF7',
+                light: '#0B1220',
+              },
+              success: {
+                DEFAULT: '#10B981',
+                50: '#ECFDF5',
+                100: '#D1FAE5',
+                200: '#A7F3D0',
+                300: '#6EE7B7',
+                400: '#34D399',
+                500: '#10B981',
+                600: '#059669',
+                700: '#047857',
+                800: '#065F46',
+                900: '#064E3B',
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+      }
+      body {
+        font-family: 'Vazirmatn', sans-serif;
+      }
+      #root {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #374151;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #4B5563;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.10.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "uuid": "https://aistudiocdn.com/uuid@^13.0.0",
+    "zustand": "https://aistudiocdn.com/zustand@^5.0.9"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gray-100 dark:bg-bg-dark text-gray-900 dark:text-text-dark transition-colors duration-200">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
