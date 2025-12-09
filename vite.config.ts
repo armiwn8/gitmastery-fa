@@ -6,7 +6,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
 
   return {
-    base: '/REPO_NAME/', // <-- IMPORTANT: replace REPO_NAME with your GitHub repo name
+    base: '/gitmastery-fa/', // <-- IMPORTANT: replace REPO_NAME with your GitHub repo name
 
     server: {
       port: 3000,
